@@ -152,7 +152,7 @@ def normalize_label(raw: str) -> str | None:
 
 def classify_news(title: str, content: str, api_key: str) -> tuple[str | None, str | None]:
     headers = {
-        "Authorization": f"Bearer pr-GLv7n8xrOztYJNz-xxhhSIYotbwqEyIMLPs0VKWEb4A",
+        "Authorization": f"Bearer {{token_api_key}}",
         "Content-Type": "application/json"
     }
     payload = {
